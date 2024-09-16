@@ -1200,7 +1200,7 @@ _rpcServer:
     # Annotations to add to webserver kubernetes service account.
     annotations: {}
   service:
-    type: ClusterIP
+    type: NodePort
     ## service annotations
     annotations: {}
     ports:
@@ -1430,7 +1430,7 @@ webserver:
   webserverConfigConfigMapName: ~
 
   service:
-    type: ClusterIP
+    type: NodePort
     ## service annotations
     annotations: {}
     ports:
@@ -1926,7 +1926,7 @@ flower:
   password: ~
 
   service:
-    type: ClusterIP
+    type: NodePort
     ## service annotations
     annotations: {}
     ports:
